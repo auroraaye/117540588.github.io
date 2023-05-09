@@ -1,0 +1,18 @@
+﻿@model cyber_project.Models.UserModel
+
+@{
+    ViewBag.Title = "LoginSuccess";
+}
+
+<h2>LoginSuccess</h2>
+
+<div>
+    <h4>You are authenticated, Welcome @Html.DisplayFor(model => model.Username).</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Logout", "Login")
+</p>
